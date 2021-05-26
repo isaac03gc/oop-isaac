@@ -2,10 +2,14 @@
 <html>
 <body>
 
-<?php
-$txt = "PHP";
-echo "I love $txt!";
-?>
+Class Juegos()
+$Shooter=new Juegos;
+$Aventura=new Juegos;
+$Estrategia=new Juegos;
+$Rol=new Juegos;
+$Terror=new Juegos;
+
+Class
 
 </body>
 </html>
