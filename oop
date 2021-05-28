@@ -1,34 +1,49 @@
 <!DOCTYPE html>
 <html>
-<body>
-
+<Body>
 <?php
 
-Class Juegos()
-$Shooter=new Juegos;
-$Aventura=new Juegos;
-$Estrategia=new Juegos;
-$Rol=new Juegos;
-$Terror=new Juegos;
+class Admin  {  
+public function saludo() {
+echo "Que tal buen hombre>> " . 
+$this->usuario;
+}
+private function suspenso($usuario) {
+echo $usuario->usuario . " su nota es menor que 5 por lo que has 	 supendido";
+}
+}
+$admin = new Admin;
+$admin->usuario = "Tu tia <BR>";
+$admin->saludo(); 	
+class Usuario {
+public $usuario;
+public $contraseña;
+private function __construct() {
+$this->contraseña = 'Maeton salvaje566';
+}
 
-Class presupuesto()
-$Relativamente barato=new presupuesto;
-$Medio=new presupuesto;
-$Relativamente caro=new presupuesto;
-$Caro=new presupuesto;
-$Muy caro=new presupuesto;
 
-function set_name($name)
-$this->name = $name;
-function get_name()
-return $this->nam;
+public function saludo() {
+echo 'Las notas no son las esperadas asi que tendremos que hablar 	  de ellas ' . 
+$this->usuario ;
 
-$Shooter->set_name('Shooter');
-$Aventura->set_name('Aventura');
-$Estrategia->set_name('Estrategia');
-$Rol->set_name('Rol');
-$Terror->set_name('Terror');
-
-¿>
+}
+}
+$Kaki = new Usuario;
+$Kaki->usuario = 'Castro <BR>';
+$Kaki->saludo();
+class Perfil{
+public $notas;
+private static $NNotasExamenes = 1.56;
+}
+public static function siNota ($nota) {
+}
+if(strlen($nota) >= self::$NNotasExamenes){
+return true;
+}
+}else{
+return false
+}
+?>
 </body>
 </html>
