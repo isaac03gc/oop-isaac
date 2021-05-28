@@ -2,6 +2,8 @@
 <html>
 <body>
 
+<?php
+
 Class Juegos()
 $Shooter=new Juegos;
 $Aventura=new Juegos;
@@ -9,7 +11,24 @@ $Estrategia=new Juegos;
 $Rol=new Juegos;
 $Terror=new Juegos;
 
-Class
+Class presupuesto()
+$Relativamente barato=new presupuesto;
+$Medio=new presupuesto;
+$Relativamente caro=new presupuesto;
+$Caro=new presupuesto;
+$Muy caro=new presupuesto;
 
+function set_name($name)
+$this->name = $name;
+function get_name()
+return $this->nam;
+
+$Shooter->set_name('Shooter');
+$Aventura->set_name('Aventura');
+$Estrategia->set_name('Estrategia');
+$Rol->set_name('Rol');
+$Terror->set_name('Terror');
+
+¿>
 </body>
 </html>
